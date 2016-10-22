@@ -19,15 +19,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:scaleType="fitXY"
-                android:background="@mipmap/default_wallpaper" />
+               />
 
-            <ImageView
-                android:id="@+id/ivpics"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@mipmap/ic_suggestions_add"
-                android:layout_centerVertical="true"
-                android:layout_centerHorizontal="true" />
         </RelativeLayout>
     </FrameLayout>
 
@@ -41,6 +34,7 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
+            android:layout_marginTop="10dp"
             android:layout_weight="3">
             <ImageView
                 android:id="@+id/mv1"
@@ -96,9 +90,43 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:orientation="vertical"
+            android:orientation="horizontal"
             android:layout_weight="6">
 
+            <ImageView
+                android:id="@+id/ivshow"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@android:color/holo_blue_light"
+                />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <Button
+                    android:id="@+id/ivadd"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="添加"
+                    android:textSize="25sp"
+                    />
+
+                <Button
+                    android:id="@+id/ivsave"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="保存"
+                    android:textSize="25sp"
+                    />
+            </LinearLayout>
 
         </LinearLayout>
     </LinearLayout>
